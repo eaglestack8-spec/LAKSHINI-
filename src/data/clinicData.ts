@@ -23,7 +23,7 @@ export const CLINIC_DETAILS: ClinicInfo = {
   },
   timings: {
     morning: '10:00 AM – 01:30 PM',
-    evening: '05:30 PM – 09:00 PM',
+    evening: '05:30 PM – 08:30 PM',
     days: 'Monday to Saturday',
     sunday: 'Sunday: Prior Phone Confirmation'
   },

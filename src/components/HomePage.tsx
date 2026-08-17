@@ -559,7 +559,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </button>
               {openFaq === 0 && (
                 <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-white/75 leading-relaxed border-t border-white/5">
-                  You can walk in directly during the designated consultation hours (10:00 AM – 1:30 PM & 5:30 PM – 9:00 PM, Monday through Saturday). For queries or Sunday timings, simply call the clinic directly at <strong>{clinic.phone}</strong>.
+                  You can walk in directly during the designated consultation hours ({clinic.timings.morning} & {clinic.timings.evening}, {clinic.timings.days}). For queries or Sunday timings, simply call the clinic directly at <strong>{clinic.phone}</strong>.
                 </div>
               )}
             </div>

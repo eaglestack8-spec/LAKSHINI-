@@ -28,6 +28,9 @@ export default function App() {
         if (parsed.phone === '+91 98424 00000') {
           parsed.phone = CLINIC_DETAILS.phone;
         }
+        if (parsed.timings?.evening === '05:30 PM – 09:00 PM' || parsed.timings?.evening === '05:30 PM – 9:00 PM') {
+          parsed.timings.evening = CLINIC_DETAILS.timings.evening;
+        }
         return parsed;
       }
     } catch {
