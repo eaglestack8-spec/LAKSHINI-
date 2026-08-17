@@ -28,8 +28,13 @@ export default function App() {
         if (parsed.phone === '+91 98424 00000') {
           parsed.phone = CLINIC_DETAILS.phone;
         }
-        if (parsed.timings?.evening === '05:30 PM – 09:00 PM' || parsed.timings?.evening === '05:30 PM – 9:00 PM') {
-          parsed.timings.evening = CLINIC_DETAILS.timings.evening;
+        if (!parsed.timings || parsed.timings.evening !== CLINIC_DETAILS.timings.evening || parsed.timings.morning !== CLINIC_DETAILS.timings.morning) {
+          parsed.timings = {
+            ...CLINIC_DETAILS.timings,
+            ...(parsed.timings || {}),
+            morning: CLINIC_DETAILS.timings.morning,
+            evening: CLINIC_DETAILS.timings.evening,
+          };
         }
         return parsed;
       }

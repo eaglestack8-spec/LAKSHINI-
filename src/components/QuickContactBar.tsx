@@ -70,9 +70,9 @@ export const QuickContactBar: React.FC<QuickContactBarProps> = ({
             </a>
           </div>
 
-          <div className="pt-1 text-[10px] text-white/50 text-center flex items-center justify-center gap-1.5">
-            <Clock className="w-3 h-3 text-emerald-400" />
-            <span>10am–1:30pm & 5:30pm–9pm</span>
+          <div className="pt-1 text-[10px] text-white/60 text-center flex items-center justify-center gap-1.5 font-medium">
+            <Clock className="w-3 h-3 text-emerald-400 shrink-0" />
+            <span>{clinic.timings.morning} & {clinic.timings.evening}</span>
           </div>
         </div>
       </div>
