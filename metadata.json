@@ -1,0 +1,6 @@
+{
+  "name": "Lakshini Skin & Hair Centre",
+  "description": "Official informational website for Lakshini Skin & Hair Centre, Dr. M. Karthikeyan, MBBS., DD. located in West Thillai Nagar, Tiruchirappalli, Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
